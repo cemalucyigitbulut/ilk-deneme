@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box; /* When you set the width/height of an element, the element often appears bigger than you have set (because the element's border and padding are added to the element's specified width/height).*/
+    margin:0;      /* The box-sizing property solves this problem.*/
+    padding:0;
+}
+
+html,body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;   /* x yonüne scroll yok*/
+    background-color: black;
+    color:red;
+    line-height:1.5; /* yazı uzunluğu */
+
+}
+
+a{
+ color:white;
+ text-decoration: none;  /* no underline*/
+
+}
+
+a:hover{
+    color:white;
+}
+
+ul{
+    list-style-type: none; /* ol ve ul deki o 1. yada noktları kaldırıyor*/
+}
+
+img{
+width: 100%;
+}
+
+.cembut{
+    display: inline-block;
+    background-color:white;
+    color:orangered;
+    min-width: 135px;
+    padding: 22px 28px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 13px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.cembut2{
+    display: inline-block;
+    background-color:#0f495c;
+    color:lime;
+    min-width: 135px;
+    padding: 21px 28px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 13px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.cembut2:hover{
+    opacity: 0.7;
+}
+.cembut:hover{
+    opacity: 0.7;
+}
+
+.cemlegal{
+    font-size: 9px;
+    color:grey;
+    margin-top: 20px;
+}
+
+.ilkh4{
+ color:blue;
+ font-size: 15px;
+ text-transform: uppercase;
+ margin-top: -80px;
+ position: relative; /*relative olmadan z index çalışmaz*/
+ z-index: 2; /*gri shadowun önüne geçsin diye*/
+
+}
+
+h3{
+    font-size: 26px;
+    font-weight: 300;
+}
+.sech4{
+    font-size: 20px;
+}
+.Terms{
+    background-color: none;
+    display: block;
+    color:gray;
+    font-size: 12px;
+    margin-top: 5px;
+    text-decoration: underline;
+
+}
+
+.header{
+    height:460px;
+    background: url(../images/14.jpg)
+    no-repeat center center / cover;
+}
+
+.header nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 20px;
+    position: relative; /*relative olmadan z index çalışmaz*/
+    z-index: 2; /*gri shadowun önüne geçsin diye*/
+}
+
+
+.header nav .loginn{
+    cursor:pointer;
+    background:none;
+    border:none;
+    color:rgb(74, 204, 22);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header .cembaba{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top:30px;
+}
+
+.header .cemo{
+width: 200px;
+margin: 25px;
+}
+
+.header .cemtext1{
+ color:lawngreen;
+ font-size: 25px;
+ font-weight: bold;
+ margin-top: -10px;
+}
+.header .cemtext2{
+ color:lightcyan;
+ font-size: 20px;
+ margin-top: -5px;
+}
+.header .cemtext3{
+ color:mediumspringgreen;
+ font-size: 20px;
+ margin-top: -5px;
+}
+.subcem {
+    display:grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    gap: 40px;
+    align-items: center;
+    padding: 30px 40px;
+    background: linear-gradient(318.68deg,#0f495c 0%,#0d3640 49.72%,#08141f 100%);
+  
+}
+
+.subcem > div:last-of-type{      /*(>div) top level div, last of type: very last div in subcem*/
+     justify-self: end;
+     align-self: end;
+}
+
+.subcem > div:last-of-type .Terms{
+    text-align: center;
+}
+
+.subfoto1{
+
+    max-width: 380px;
+    max-height: 110px;
+}
+
+
+.cemcattext{
+    color:mintcream;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.cemcattext2{
+    color:mintcream;
+    max-width: 850px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h5{
+    color:lime;
+}
+
+.cemkatagori{
+    display:flex;  /*for easly align*/
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 80px 30px;
+}
+.cemkatagori .kaplama{
+    display:grid;
+    grid-template-columns: repeat(4,1fr); /*repeat for 4 times 1fr*/
+    margin-top: 30px;
+    gap: 20px;
+}
+
+
+.cemkatagori .kaplama > div {
+    height: 600px;
+    width: 400px;
+    position: relative;
+}
+
+.cemkatagori .kaplama-grad{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      156.82deg,
+      rgba(0, 0, 0, 0.6) 4.58%,
+      rgba(0, 0, 0, 0) 69.61%
+    ),
+    linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
+
+}
+
+.cemkatagori .kaplamalar1{
+    background: url(/images/1.jpg) no-repeat center center / cover;
+}
+
+.cemkatagori .kaplamalar2{
+    background: url(/images/21.jpg) no-repeat center center / cover;
+}
+.cemkatagori .kaplamalar3{
+    background: url(/images/17.png) no-repeat center center / cover;
+}
+.cemkatagori .kaplamalar4{
+    background: url(/images/24.png) no-repeat center center / cover;
+}
+
+.cemkatagori .kaplama-title{
+    color:gold;
+}
+
+.cemkatagori .kaplama-text{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: left;
+}
+
+.header::after{
+    content: '';
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+    background: linear-gradient(
+    180deg,
+    rgba(63, 51, 51, 0.76) 15.54%,
+    rgba(214, 193, 193, 0.192) 60.23%,
+    rgba(0, 0, 0, 8e-5) 100%
+  );
+}
+
+
+.footer{
+    background: white;
+    color:black;
+
+}
+.footer a {
+    color:black;
+}
+.footer-konteynir{
+    max-width: 1700px;
+    margin:auto;
+    padding: 40px;
+}
+
+.footer-liste{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-liste .list-head{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.divider{
+    width: 100%;
+    height: 3px;
+    border-top: 1px grey solid;
+    margin:30px 0; 
+} 
+
+.sosyal-ikonlar img{
+    width: 25px;
+    height: 25px;
+    margin-right:25px;
+}
+
+.model{
+  display:none;    /* javadan manipüle edecez*/
+  position: fixed;
+  top:0; /*bunu top lefte koymak isityoz*/
+  left:0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /*tranparency 0.5*/
+}
+
+.model-box{
+    margin: 10% auto; /*10%: (top and bottom)   auto: (left and right)*/
+    width: 450px;
+    background: white;
+    color:black;
+    position: relative; /*close button position will be positioned absolute*/
+    animation: modelopen 1s;   /*animasyon için hazırlık*/
+}
+ 
+@keyframes modelopen{   /*animasyon ekledik (modelopen custom bir isim)*/
+    from{
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+.model-body{
+    padding:50px;
+}
+
+.model-body h3{
+    font-weight: bold;
+}
+
+.karabuton{
+    display: inline-block;
+    background: black;
+    color:white;
+    text-transform: uppercase;
+    min-width: 135px;
+    padding: 21px 28px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 13px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.model-body .karabuton{
+    width: 100%;
+    margin-top: 30px;
+}
+.model .close{
+    cursor: pointer;
+    height: 23px;
+    width: 23px;
+    position:absolute;
+    top: 20px;
+    right: 20px;
+}
+.model .model-footer{
+    background:lavender;
+    color:black;
+    padding:20px 0;
+    border-top: #eee 1px solid;
+    text-align: center;
+}
+
+.model .model-footer a{
+    color:blue;
+}
+
+.form-control{
+    margin: 20px 0;
+}
+
+.form-control label{
+    display: block;
+    text-transform: uppercase;
+}
+
+.form-control input{
+    width: 100%;
+    border: 2px black solid;
+    border-radius: 5px;  /*border keskinlik*/
+    height: 50px; /*kutu uzunluğu*/
+    padding: 5px; /* kutu içi ayrımı*/
+}
+
+.model .forgot{
+    color:blue;
+}
+
+.model .forgot:hover{
+    text-decoration: underline;
+    color:black;
+    opacity: 0.7;
+}
+.model .sign:hover{
+    text-decoration: underline;
+}
