@@ -35,7 +35,7 @@ width: 100%;
 
 .cembut{
     display: inline-block;
-    background-color:white;
+    background-color:black;
     color:orangered;
     min-width: 135px;
     padding: 22px 28px;
@@ -47,6 +47,8 @@ width: 100%;
     cursor: pointer;
     text-transform: uppercase;
 }
+
+
 .cembut2{
     display: inline-block;
     background-color:#0f495c;
@@ -65,9 +67,13 @@ width: 100%;
     opacity: 0.7;
 }
 .cembut:hover{
-    opacity: 0.7;
+    opacity: 0.9;
+    text-decoration: underline;
 }
 
+.cemdetails:hover{
+    text-decoration: underline;
+}
 .cemlegal{
     font-size: 9px;
     color:grey;
@@ -420,4 +426,14 @@ h5{
 }
 .model .sign:hover{
     text-decoration: underline;
+}
+
+
+/*SUBPAGE cembaba.html*/
+
+.header .cb{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:-20px;
+    color:darkgoldenrod
 }
