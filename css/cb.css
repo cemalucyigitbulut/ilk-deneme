@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box; /* When you set the width/height of an element, the element often appears bigger than you have set (because the element's border and padding are added to the element's specified width/height).*/
+    margin:0;      /* The box-sizing property solves this problem.*/
+    padding:0;
+}
+
+.cb{
+    font-size: bold;
+    line-height:1.5;
+    color:black;
+    text-align: center; 
+    text-transform: uppercase;
+}
+.cemdiv{
+    font-size: 30px;
+    line-height:1.5;
+    color:black;
+    text-align: center;
+}
+
+.cemdiv .realcembaba{
+    width: 500px;
+}
+/*cemdow*/
+
+.cemdow{
+    font-size: 30px;
+    line-height:1.5;
+    color:black;
+    text-align: center;
+}
+ 
+.cemdowfloat{
+   float:left
+}
+      
+
+
+
+      /*blabla*/
+html,body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;   /* x yonüne scroll yok*/
+    background-color:lightcyan;
+    color:black;
+    line-height:1.5; /* yazı uzunluğu */
+
+}
+a{
+    color:red;
+}
+
+
+/*Navigation*/
+.cemnav{
+    overflow:hidden;
+    background-color:black;
+}
+
+.cemnav a{
+    float:left;
+    font-size:bold;
+    color:lime;
+    text-align:center;
+    padding:13px 15px;
+    text-decoration:none;  
+}
+
+.cemnav a:hover{
+    background-color: none;
+}
+.cemsubnav:hover .cemsubnavbutton{
+    background-color:dimgray;
+}
+
+.cemsubnav{
+    float:right;
+    overflow:hidden;
+}
+.cemsubnav .cemsubnavbutton{
+    font-size:bold;
+    border:none;
+    outline:none;
+    color:lime;
+    padding:15px;
+    background-color:inherit;
+    font-family:'Roboto', sans-serif;;
+    margin:0;
+}
+.subnavicerik{
+ display:none;
+ position: absolute;
+ left:0;
+ background-color:black;
+ width: 100%;
+ z-index: 1;
+}
+
+.subnavicerik a{
+    float:right;
+    color:red;
+    text-decoration: none;
+}
+
+.subnavicerik a:hover{
+    background-color: black;
+    color:lime;
+}
+.cemsubnav:hover .subnavicerik{
+    display: block;
+}
+/*cembaba home img*/
+.home{
+    overflow:hidden;  /*taşarsa yanda scrool işerati çıkmasın*/
+    cursor: pointer;
+    height: 30px;
+    width: 50px;
+    position: absolute;
+    top:10px;
+    left: 10px;
+
+}
