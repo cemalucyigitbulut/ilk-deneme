@@ -1,47 +1,61 @@
+html {
+     overflow-x: initial !important;    /* 2 tane scroll olmasın */
+  }
+
 *{
     box-sizing: border-box; /* When you set the width/height of an element, the element often appears bigger than you have set (because the element's border and padding are added to the element's specified width/height).*/
     margin:0;      /* The box-sizing property solves this problem.*/
     padding:0;
 }
 
+/*header*/
+.header{
+    height:460px;
+    background: url(../images/bubu.jpg)
+    no-repeat center center / cover;
+}
+
 .cb{
     font-size: bold;
     line-height:1.5;
-    color:black;
+    color:white;
     text-align: center; 
     text-transform: uppercase;
 }
 .cemdiv{
     font-size: 30px;
     line-height:1.5;
-    color:black;
+    color:white;
     text-align: center;
 }
 
-.cemdiv .realcembaba{
-    width: 500px;
+.realcembaba{
+    width: 600px;
 }
 /*cemdow*/
+.cemdowt{
+    margin-top: -15px;
+}
 
 .cemdow{
     font-size: 30px;
     line-height:1.5;
-    color:black;
+    color:white;
     text-align: center;
 }
  
-.cemdowfloat{
+/* .cemdowfloat{
    float:left
-}
+} */
       
 
 
 
-      /*blabla*/
+   /* background */
 html,body{
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;   /* x yonüne scroll yok*/
-    background-color:lightcyan;
+    background-image: linear-gradient(to left,#0f495c 0%,#0d3640 49.72%,#08141f 100%);
     color:black;
     line-height:1.5; /* yazı uzunluğu */
 
@@ -54,7 +68,9 @@ a{
 /*Navigation*/
 .cemnav{
     overflow:hidden;
-    background-color:black;
+    background-image: linear-gradient(to left,#0f495c 0%,#0d3640 49.72%,#08141f 100%);
+    /* background:url(../images/bubu.jpg)
+    no-repeat center center/cover ; */
 }
 
 .cemnav a{
@@ -62,10 +78,13 @@ a{
     font-size:bold;
     color:lime;
     text-align:center;
-    padding:13px 15px;
+    padding:20px 10px;
     text-decoration:none;  
 }
-
+.cemnav img{         /*home fotoyu sabit tutmak için*/
+    position:absolute;
+    padding: 1px;
+}
 .cemnav a:hover{
     background-color: none;
 }
@@ -81,8 +100,8 @@ a{
     font-size:bold;
     border:none;
     outline:none;
-    color:lime;
-    padding:15px;
+    color:rgb(0, 255, 200);
+    padding:10px;
     background-color:inherit;
     font-family:'Roboto', sans-serif;;
     margin:0;
@@ -91,20 +110,22 @@ a{
  display:none;
  position: absolute;
  left:0;
- background-color:black;
+ background-image: linear-gradient(to left,#0f495c 0%,#0d3640 49.72%,#08141f 100%);
  width: 100%;
  z-index: 1;
 }
 
 .subnavicerik a{
+    padding: 11px;
     float:right;
-    color:red;
+    color:rgb(0, 255, 149);
     text-decoration: none;
 }
 
 .subnavicerik a:hover{
-    background-color: black;
-    color:lime;
+    background-image: linear-gradient(to left,#0f495c 0%,#0d3640 49.72%,#08141f 100%);
+    /* background-color:dimgray; */
+    color:rgb(0, 81, 255);
 }
 .cemsubnav:hover .subnavicerik{
     display: block;
@@ -115,8 +136,39 @@ a{
     cursor: pointer;
     height: 30px;
     width: 50px;
-    position: absolute;
+    position: fixed;
     top:10px;
     left: 10px;
 
 }
+ /*cembabadiv img bullshit */
+ /* .cembabadiv1{
+    height:100px;
+    background-image: url(images\am.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+    background-size:cover;
+ } */
+ 
+ .cembabafotodow{  /* fotoları yanyana koyma*/
+     /* margin-left: 870px;
+     margin-top: 5px; */
+     float: left;
+     width: 10%;
+     padding: 15px;
+}
+ 
+ .cembadadiv p{
+    color:ghostwhite;
+     font-size: 25px;
+     font-weight: bold;
+ }
+
+ .cembabadiv::after { /*(clear floats)*/
+    content: "";
+    clear: both;
+    display:table;
+  }
+
+ 
