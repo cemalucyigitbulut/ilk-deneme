@@ -10,8 +10,9 @@ html,body{
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;   /* x yonüne scroll yok*/
     background-color: black;
-    color:red;
+    /* color:red; */
     line-height:1.5; /* yazı uzunluğu */
+    scroll-behavior: smooth; /*yaz bak*/
 
 }
 
@@ -35,8 +36,8 @@ width: 100%;
 
 .cembut{
     display: inline-block;
-    background-color:black;
-    color:orangered;
+    background-color:rgb(26, 11, 92);
+    color:rgb(0, 174, 255);
     min-width: 135px;
     padding: 22px 28px;
     font-size: 12px;
@@ -69,6 +70,14 @@ width: 100%;
 .cembut:hover{
     opacity: 0.9;
     text-decoration: underline;
+}
+
+.cemdetails{
+    font-weight: bold;
+    cursor:pointer;
+    background:none;
+    border:none;
+    color:white;
 }
 
 .cemdetails:hover{
@@ -109,7 +118,7 @@ h3{
 
 .header{
     height:460px;
-    background: url(../images/14.jpg)
+    background: url(../images/bubu.jpg)
     no-repeat center center / cover;
 }
 
@@ -143,6 +152,7 @@ h3{
 .header .cemo{
 width: 200px;
 margin: 25px;
+margin-right:35px;
 }
 
 .header .cemtext1{
@@ -273,12 +283,12 @@ h5{
     top:0;
     left:0;
     width: 100%;
-    height: 150px;
+    height: 90px;
     z-index: 1;
     background: linear-gradient(
     180deg,
-    rgba(63, 51, 51, 0.76) 15.54%,
-    rgba(214, 193, 193, 0.192) 60.23%,
+    rgba(41, 33, 33, 0.76) 15.54%,
+    rgba(61, 56, 56, 0.192) 60.23%,
     rgba(0, 0, 0, 8e-5) 100%
   );
 }
@@ -436,4 +446,454 @@ h5{
     font-weight: bold;
     margin-top:-20px;
     color:darkgoldenrod
+}
+/*section subcem*/
+.subcem{
+    color:red
+}
+
+/*CemBaba Details*/
+.cemdetailsopen{
+    display:none; 
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1;
+    height: 100%;
+    width: 100%;
+    background: rgb(0 ,0 ,0 , 0.5);
+}
+.cemdetbox{
+    margin: 10% auto;
+    width: 1000px;
+    animation: modelopen2 1s;
+}
+
+@keyframes modelopen2{   
+    from{
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
+
+.cemtick{
+    width: 20px;
+    margin-right:10px;
+}
+
+.cemyazı{
+    font-family: 'STIX Two Text', serif;
+    margin-top:30px;
+    font-size: large;
+    color:white;
+    margin-left:20px;
+    
+}
+.minibaslik{
+    margin-left:25px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 25px;
+    color:white;
+}
+
+.cemdetbox{
+    background:linear-gradient(365.68deg,#1fbfb8 ,#05716c  ,#1978a5 ,#031163  );
+    /* background: linear-gradient(365.68deg,#0f495c 25%,#0d3640 49.72%,#08141f 100%); */
+}
+
+.cemyazı2{
+    font-family: 'Roboto Mono', monospace;
+    font-size: large;
+    color:white;
+    margin-top:30px;
+    margin-left:20px;
+}
+.cemdetailsopen .close2{
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    position:absolute;
+    margin-left:950px;
+    margin-top:-490px;
+}
+
+
+/*cembaba live tv*/
+.cemlive{
+    background: #151516;
+    padding: 40px;
+}
+
+.yesilborder{
+    border:4px solid #1ce783;
+    border-radius:16px;
+    padding:100px;
+    display:flex; /*so we can aling*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cemlive a{
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.cemlive h4{
+    color:lime;
+    padding: 20px;
+    margin-bottom:25px;
+}
+.cemlivetext-xl{
+    font-size: 55px;
+    margin-bottom: 35px;
+    color:limegreen
+}
+.cembabalivelegaltext{
+    font-size: 12px;
+    color:grey;
+    margin-top: 10px;
+}
+
+.cembabalibesubtext{
+    font-size: 25px;
+    margin-bottom: 25px;
+    color:cadetblue;
+}
+
+/* animated arrow */
+
+
+
+
+.arrowdown {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  
+  
+  /* .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  } */
+
+ 
+
+/* .arrowdown{
+    animation:arrowdown,2s,linear,0s,infinite,normal; 
+    
+     animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;  
+}  */
+
+  /* @keyframes arrowdown {
+    from {top: 0px;}
+    to {top: 200px;}
+ }  */
+
+
+ 
+ 
+ 
+ /*Live Sport*/
+
+ .cemlivesec2{
+     background:url(/images/arkaplan51.jpg) no-repeat center center / cover;
+     height:800px;
+     position:relative; /*to position content inside absolute*/
+ }
+
+ .livesporticindekiler{
+     position: absolute;
+     top:160px;
+     left:100px;
+     color:white;
+ }
+ .livesportlogos{
+     width: 500px;
+     margin-top:100px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ .livesportlogos img{
+     width: 40px;
+ }
+
+ .livesportlogos > div{
+     background:url(/images/bosdaire.png) no-repeat center center / cover;
+     height: 60px;
+     width: 60px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left:50px;
+ }
+
+ .livesporttext1{
+    
+    font-weight: bold;
+    position:absolute;
+    margin-top:-80px;
+    padding:20px;
+    font-size: 80px;
+    top:-60px;
+    right:100px;
+    margin-right:250px;
+    
+}
+.livesporttext2{
+    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+    position:absolute;
+    top:-20px;
+    right:-50px;
+    margin-left:20px;
+    margin-top:30px;
+}
+.livelegal{
+    
+    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+    position:relative;
+    top:-100px;
+    right:100px;
+    margin-top:190px;
+    margin-left:110px;
+}
+
+.livetext3{
+    font-weight: bold;   
+    font-family: 'Source Code Pro', monospace;
+    position:absolute;
+    top:350px;
+    right:50px;
+    margin-right:320px;
+    margin-top:30px;
+}
+
+.yanfoto{
+    position:absolute;
+    width: 550px;
+    margin-left: 1300px;
+    top: -100px;
+    left: -150px;
+}
+
+/*news section*/
+
+/* .cemnewsfull{
+  display:none;
+} */
+
+.newslogo > div{
+    background:url(/images/bosdaire.png) no-repeat center center / cover;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:50px;
+}
+
+.newslogo img{
+    width: 35px;
+}
+
+.cemliveplace3{
+    background:url(/images/arkaplan50.jpg) no-repeat center center / cover;
+}
+
+.newslogo{
+    width: 500px;
+     margin-top:100px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+
+
+.newstext1{
+    
+    font-weight: bold;
+    /* position:relative; */
+    /* margin-top:-80px; */
+    padding:20px;
+    font-size: 80px;
+   
+}
+.newstext2{
+    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+    /* position:relative; */
+    top:-20px;
+    right:-50px;
+    margin-left:20px;
+    margin-top:30px;
+}
+.newlegal{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+    position:relative;
+    top:-100px;
+    right:100px;
+    margin-top:190px;
+    margin-left:120px;
+}
+
+.cemxd{
+    position:absolute;
+    width: 390px;
+    margin-left: 1400px;
+    top: 3100px;
+    left: -50px;
+}
+
+/*events section*/
+
+/* .cemeventsfull{
+    display:none;
+} */
+
+.cemliveplace4{
+    background: url(/images/arkaplan5.png) no-repeat center center / cover;
+}
+
+.cemliveplace4{
+    color:white;
+}
+
+.eventlogos > div{
+    background:url(/images/bosdaire.png) no-repeat center center / cover;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:50px;
+}
+.eventlogos img{
+    width:30px;
+}
+
+.eventlogos{
+    width: 500px;
+     margin-top:100px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.eventtext1{
+    font-weight: bold;
+    /* position:relative; */
+    /* margin-top:-80px; */
+    padding:20px;
+    font-size: 70px;
+}
+.eventtext2{
+    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+    /* position:relative; */
+    top:-20px;
+    right:-50px;
+    margin-left:20px;
+    margin-top:30px;
+}
+.eventlegal{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+    position:relative;
+    top:-100px;
+    right:100px;
+    margin-top:190px;
+    margin-left:120px;
+}
+.cemyas40{
+    position:absolute;
+    width: 390px;
+    margin-left: 1400px;
+    top: 3680px;
+    left: -50px;
+}
+
+
+
+
+/*buttonlar*/
+.cemlivenews{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    width: 80px;
+    height: 30px;
+    border:none;
+    background-color:rgba(0, 0, 0, 0.0);
+    position:absolute;
+    margin-top:50px;
+    margin-left:850px;
+    z-index: 2;
+    color:deepskyblue;
+}
+.cemlivenews:hover{
+    text-decoration: underline;
+    cursor:pointer;
+    transform: scale(1.2);
+    transition: transform 50ms ease-out;
+}
+
+.cemlivesport{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    width: 80px;
+    height: 30px;
+    border:none;
+    background-color:rgba(0, 0, 0, 0.0);
+    position:absolute;
+    margin-top:50px;
+    margin-left:690px;
+    z-index: 2;
+    color:deepskyblue;
+}
+.cemlivesport:hover{
+    text-decoration: underline;
+    cursor:pointer;
+    transform: scale(1.2);
+    transition: transform 50ms ease-out;
+}
+.cemevents{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    width: 80px;
+    height: 30px;
+    border:none;
+    background-color:rgba(0, 0, 0, 0.0);
+    position:absolute;
+    margin-top:50px;
+    margin-left:980px;
+    z-index: 2;
+    color:deepskyblue;
+}
+.cemevents:hover{
+    text-decoration: underline;
+    cursor:pointer;
+    transform: scale(1.2);
+    transition: transform 50ms ease-out;
 }
