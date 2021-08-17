@@ -47,6 +47,7 @@ width: 100%;
     border-radius: 5px;
     cursor: pointer;
     text-transform: uppercase;
+    box-shadow: 1px 4px 4px 1px #0d3640;
 }
 
 
@@ -63,6 +64,7 @@ width: 100%;
     border-radius: 5px;
     cursor: pointer;
     text-transform: uppercase;
+    box-shadow: 5px 2px 4px 2px #05716c;
 }
 .cembut2:hover{
     opacity: 0.7;
@@ -192,8 +194,8 @@ margin-right:35px;
 
 .subfoto1{
 
-    max-width: 380px;
-    max-height: 110px;
+    max-width: 350px;
+    max-height: 105px;
 }
 
 
@@ -253,17 +255,17 @@ h5{
 }
 
 .cemkatagori .kaplamalar1{
-    background: url(/images/1.jpg) no-repeat center center / cover;
+    background: url(/images/efkarcem.jpg) no-repeat center center / cover;
 }
 
 .cemkatagori .kaplamalar2{
-    background: url(/images/21.jpg) no-repeat center center / cover;
+    background: url(/images/chadcem.png) no-repeat center center / cover;
 }
 .cemkatagori .kaplamalar3{
-    background: url(/images/17.png) no-repeat center center / cover;
+    background: url(/images/cemlol.jpg) no-repeat center center / cover;
 }
 .cemkatagori .kaplamalar4{
-    background: url(/images/24.png) no-repeat center center / cover;
+    background: url(/images/sj.jpg) no-repeat center center / cover;
 }
 
 .cemkatagori .kaplama-title{
@@ -501,7 +503,8 @@ h5{
 }
 
 .cemdetbox{
-    background:linear-gradient(365.68deg,#1fbfb8 ,#05716c  ,#1978a5 ,#031163  );
+    /* background:linear-gradient(365.68deg,#1fbfb8 ,#05716c  ,#1978a5 ,#031163  ); */
+    background:url(/images/arkaplan9.PNG) center center/cover;
     /* background: linear-gradient(365.68deg,#0f495c 25%,#0d3640 49.72%,#08141f 100%); */
 }
 
@@ -612,6 +615,8 @@ h5{
  
  /*Live Sport*/
 
+
+ 
  .cemlivesec2{
      background:url(/images/arkaplan51.jpg) no-repeat center center / cover;
      height:800px;
@@ -697,9 +702,9 @@ h5{
 
 /*news section*/
 
-/* .cemnewsfull{
-  display:none;
-} */
+.cemnewsfull{
+    display:none;
+}
 
 .newslogo > div{
     background:url(/images/bosdaire.png) no-repeat center center / cover;
@@ -762,15 +767,15 @@ h5{
     position:absolute;
     width: 390px;
     margin-left: 1400px;
-    top: 3100px;
+    top: 2300px;
     left: -50px;
 }
 
 /*events section*/
 
-/* .cemeventsfull{
+.cemeventsfull{
     display:none;
-} */
+}
 
 .cemliveplace4{
     background: url(/images/arkaplan5.png) no-repeat center center / cover;
@@ -831,7 +836,7 @@ h5{
     position:absolute;
     width: 390px;
     margin-left: 1400px;
-    top: 3680px;
+    top: 2300px;
     left: -50px;
 }
 
@@ -839,7 +844,29 @@ h5{
 
 
 /*buttonlar*/
+
+
 .cemlivenews{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    width: 80px;
+    height: 30px;
+    border:none;
+    background-color:rgba(0, 0, 0, 0.0);
+    position:absolute;
+    margin-top:50px;
+    margin-left:930px;
+    z-index: 2;
+    color:deepskyblue;
+}
+.cemlivenews:hover{
+    text-decoration: underline;
+    cursor:pointer;
+    transform: scale(1.2);
+    transition: transform 50ms ease-out;
+}
+
+.cemlivenews2{
     font-family: 'Dancing Script', cursive;
     font-size: 20px;
     width: 80px;
@@ -852,14 +879,57 @@ h5{
     z-index: 2;
     color:deepskyblue;
 }
-.cemlivenews:hover{
+
+.cemlivenews2:hover{
     text-decoration: underline;
     cursor:pointer;
     transform: scale(1.2);
     transition: transform 50ms ease-out;
 }
 
+.cemlivenews3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    width: 80px;
+    height: 30px;
+    border:none;
+    background-color:rgba(0, 0, 0, 0.0);
+    position:absolute;
+    margin-top:50px;
+    margin-left:850px;
+    z-index: 2;
+    color:deepskyblue;
+}
+
+.cemlivenews3:hover{
+    text-decoration: underline;
+    cursor:pointer;
+    transform: scale(1.2);
+    transition: transform 50ms ease-out;
+}
+
+
 .cemlivesport{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    width: 80px;
+    height: 30px;
+    border:none;
+    background-color:rgba(0, 0, 0, 0.0);
+    position:absolute;
+    margin-top:50px;
+    margin-left:770px;
+    z-index: 2;
+    color:deepskyblue;
+}
+.cemlivesport:hover{
+    text-decoration: underline;
+    cursor:pointer;
+    transform: scale(1.2);
+    transition: transform 50ms ease-out;
+}
+
+.cemlivesport2{
     font-family: 'Dancing Script', cursive;
     font-size: 20px;
     width: 80px;
@@ -872,13 +942,60 @@ h5{
     z-index: 2;
     color:deepskyblue;
 }
-.cemlivesport:hover{
+
+.cemlivesport2:hover{
     text-decoration: underline;
     cursor:pointer;
     transform: scale(1.2);
     transition: transform 50ms ease-out;
 }
-.cemevents{
+
+.cemlivesport3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    width: 80px;
+    height: 30px;
+    border:none;
+    background-color:rgba(0, 0, 0, 0.0);
+    position:absolute;
+    margin-top:50px;
+    margin-left:690px;
+    z-index: 2;
+    color:deepskyblue;
+}
+
+.cemlivesport3:hover{
+    text-decoration: underline;
+    cursor:pointer;
+    transform: scale(1.2);
+    transition: transform 50ms ease-out;
+}
+
+
+
+
+
+.cemliveevents{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    width: 80px;
+    height: 30px;
+    border:none;
+    background-color:rgba(0, 0, 0, 0.0);
+    position:absolute;
+    margin-top:50px;
+    margin-left:1050px;
+    z-index: 2;
+    color:deepskyblue;
+}
+.cemliveevents:hover{
+    text-decoration: underline;
+    cursor:pointer;
+    transform: scale(1.2);
+    transition: transform 50ms ease-out;
+}
+
+.cemliveevents2{
     font-family: 'Dancing Script', cursive;
     font-size: 20px;
     width: 80px;
@@ -891,7 +1008,28 @@ h5{
     z-index: 2;
     color:deepskyblue;
 }
-.cemevents:hover{
+.cemliveevents2:hover{
+    text-decoration: underline;
+    cursor:pointer;
+    transform: scale(1.2);
+    transition: transform 50ms ease-out;
+}
+
+
+.cemliveevents3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    width: 80px;
+    height: 30px;
+    border:none;
+    background-color:rgba(0, 0, 0, 0.0);
+    position:absolute;
+    margin-top:50px;
+    margin-left:980px;
+    z-index: 2;
+    color:deepskyblue;
+}
+.cemliveevents3:hover{
     text-decoration: underline;
     cursor:pointer;
     transform: scale(1.2);
