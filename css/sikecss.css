@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box; /* When you set the width/height of an element, the element often appears bigger than you have set (because the element's border and padding are added to the element's specified width/height).*/
+    margin:0;      /* The box-sizing property solves this problem.*/
+    padding:0;
+}
+
 .sike{
     margin-left: 600px;
     font-size: 300px;
@@ -6,3 +12,122 @@ a{
     margin-left: 750px;
     font-size: 90px;
 }
+
+/*DarkMode*/
+
+body{
+    padding:25px;
+    background-color: white;
+    color: Black;
+}
+
+.darkMode{
+    background-color: black;
+    color: white;
+}
+
+/*DarkMode Label*/
+.checkbox{
+    top:10px;
+    right:-890px;
+    display:inline-block; /*dışdan basılıyordu inline yaptım*/
+    width: 100px;
+    height: 40px;
+    background-color:rgb(11, 12, 12);
+    color:white;
+    border-radius: 40px;
+    position: relative;
+    cursor:pointer;
+    transition: 1000ms background-color;
+}
+
+.checkbox .spann{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:rgb(229, 233, 236);
+    position:absolute;
+    top:5px;
+    left:5px;
+    transition: 500ms left, 1000ms background-color;
+}
+.darklabel input:checked +.checkbox{
+     background-color:rgb(248, 244, 244);
+}
+
+.darklabel input:checked + .checkbox .spann{
+    left:65px;
+    background-color:rgb(7, 7, 7);
+}
+
+label input{
+    display:none;
+}
+
+
+.checkbox .spann .textspann{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:transparent;
+    color:black;
+    position:absolute;
+    top:4px;
+    left:2px;
+    transition: 500ms left, 1000ms background-color;
+}
+
+
+
+
+
+.darklabel input:checked + .checkbox .spann .textspann{
+    color:white;
+}
+
+
+/* bulşit */
+
+/* body{
+    padding:10% 3% 10% 3%;
+    text-align:center;
+    } */
+    /* img{
+        height:140px;
+            width:140px;
+    } */
+    /* h1{
+    color: #32a852;
+    } */
+    /* .mode {
+        float:right;
+    } */
+    /* .change {
+        cursor: pointer;
+        border: 1px solid #555;
+        border-radius: 40%;
+        width: 20px;
+        text-align: center;
+        padding: 5px;
+        margin-left: 8px;
+    } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ::-webkit-scrollbar the scrollbar.
+::-webkit-scrollbar-button the buttons on the scrollbar (arrows pointing upwards and downwards).
+::-webkit-scrollbar-thumb the draggable scrolling handle.
+::-webkit-scrollbar-track the track (progress bar) of the scrollbar.
+::-webkit-scrollbar-track-piece the track (progress bar) NOT covered by the handle.
+::-webkit-scrollbar-corner the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet.
+::-webkit-resizer the draggable resizing handle that appears at the bottom corner of some elements. */

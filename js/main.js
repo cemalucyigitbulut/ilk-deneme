@@ -160,3 +160,22 @@ function openEvents3(){
 
 
 
+
+
+//Something something
+//somebullshit
+
+
+// const cembabaprice = querySelector('.cembababundledarkmode')
+
+// function DarkMode(){
+//     var element = document.body;
+//     element.classList.toggle("darkMode")
+// }
+
+
+
+
+
+
+

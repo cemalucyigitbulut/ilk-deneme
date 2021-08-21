@@ -8,7 +8,7 @@
 
 html,body{
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;   /* x yonüne scroll yok*/
+     /* overflow-x: hidden;*/   /* x yonüne scroll yok*/ /*sticky nin' anasını sikiyor diye comment altına aldım*/
     background-color: black;
     /* color:red; */
     line-height:1.5; /* yazı uzunluğu */
@@ -89,6 +89,12 @@ width: 100%;
     font-size: 9px;
     color:grey;
     margin-top: 20px;
+  -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none;                       
 }
 
 .ilkh4{
@@ -152,9 +158,10 @@ h3{
 }
 
 .header .cemo{
-width: 200px;
-margin: 25px;
+width: 250px;
+margin: 5px;
 margin-right:35px;
+margin-left:35px;
 }
 
 .header .cemtext1{
@@ -297,7 +304,7 @@ h5{
 
 
 .footer{
-    background: white;
+    background: rgb(221, 218, 218);
     color:black;
 
 }
@@ -863,7 +870,7 @@ h5{
     text-decoration: underline;
     cursor:pointer;
     transform: scale(1.2);
-    transition: transform 50ms ease-out;
+    transition: transform 550ms ease-out;
 }
 
 .cemlivenews2{
@@ -884,7 +891,7 @@ h5{
     text-decoration: underline;
     cursor:pointer;
     transform: scale(1.2);
-    transition: transform 50ms ease-out;
+    transition: transform 550ms ease-out;
 }
 
 .cemlivenews3{
@@ -905,7 +912,7 @@ h5{
     text-decoration: underline;
     cursor:pointer;
     transform: scale(1.2);
-    transition: transform 50ms ease-out;
+    transition: transform 550ms ease-out;
 }
 
 
@@ -926,7 +933,7 @@ h5{
     text-decoration: underline;
     cursor:pointer;
     transform: scale(1.2);
-    transition: transform 50ms ease-out;
+    transition: transform 550ms ease-out;
 }
 
 .cemlivesport2{
@@ -947,7 +954,7 @@ h5{
     text-decoration: underline;
     cursor:pointer;
     transform: scale(1.2);
-    transition: transform 50ms ease-out;
+    transition: transform 550ms ease-out;
 }
 
 .cemlivesport3{
@@ -968,7 +975,7 @@ h5{
     text-decoration: underline;
     cursor:pointer;
     transform: scale(1.2);
-    transition: transform 50ms ease-out;
+    transition: transform 550ms ease-out;
 }
 
 
@@ -992,7 +999,7 @@ h5{
     text-decoration: underline;
     cursor:pointer;
     transform: scale(1.2);
-    transition: transform 50ms ease-out;
+    transition: transform 550ms ease-out;
 }
 
 .cemliveevents2{
@@ -1012,7 +1019,7 @@ h5{
     text-decoration: underline;
     cursor:pointer;
     transform: scale(1.2);
-    transition: transform 50ms ease-out;
+    transition: transform 550ms ease-out;
 }
 
 
@@ -1033,5 +1040,504 @@ h5{
     text-decoration: underline;
     cursor:pointer;
     transform: scale(1.2);
-    transition: transform 50ms ease-out;
+    transition: transform 550ms ease-out;
 }
+
+
+/* CustomScrollBar */
+
+::-webkit-scrollbar{
+    width:17px; 
+}
+
+::-webkit-scrollbar-track{ 
+    /*background of scrollbar*/
+    border: 3px solid #0f495c;  /*scrollbar border px,style,color*/
+    background-color: #082032;  /*background of range of scrollbar*/
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, rgb(6, 222, 225), rgb(121, 255, 108)); /*the draggable scrolling handle.*/
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+::-webkit-scrollbar-button:single-button{ /*buttonbackground of scrollbar*/
+    background-color: #082032;
+    display: block;
+    /* border-style: solid; */
+    /* height: 13px;
+    width: 16px; */
+    background-size:10px;
+    background-repeat: no-repeat;
+}
+
+/*UP BUTTONS*/
+::-webkit-scrollbar-button:single-button:vertical:decrement{  /*üçgenin normal hali*/
+  border-width: 5px 5px 0px 0px;
+  /* border-color: transparent transparent #06b5f0 transparent; */
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(121, 255, 108)'><polygon points='50,00 0,50 100,50'/></svg>");
+  background-position: center 4px;
+  height: 16px;
+  width: 16px;
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover{  /*Hover yapınca üçgen mavi olsun*/
+    /* border-color: transparent transparent lime transparent; */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(6, 222, 225)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:active{  /*Üçgene basınca gri olsun olsun*/
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='50,00 0,50 100,50'/></svg>");
+
+}
+
+
+
+/*DOWN BUTTONS*/
+::-webkit-scrollbar-button:single-button:vertical:increment {  /*üçgenin normal hali*/
+    border-width: 0px 0px 5px 5px;
+    /* border-color: #06b8f3 transparent transparent transparent; */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(121, 255, 108)'><polygon points='0,0 100,0 50,50'/></svg>");
+    background-position: center 4px;
+    height: 16px;
+    width: 16px;
+  }
+  
+::-webkit-scrollbar-button:vertical:single-button:increment:hover { /*Hover yapınca üçgen mavi olsun*/
+    /* border-color: lime transparent transparent transparent; */
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(6, 222, 225)'><polygon points='0,0 100,0 50,50'/></svg>");
+  }
+
+::-webkit-scrollbar-button:single-button:vertical:increment:active{ /*Üçgene basınca gri olsun olsun*/
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+
+
+
+ 
+
+  /* ::-webkit-scrollbar the scrollbar.
+::-webkit-scrollbar-button the buttons on the scrollbar (arrows pointing upwards and downwards).
+::-webkit-scrollbar-thumb the draggable scrolling handle.
+::-webkit-scrollbar-track the track (progress bar) of the scrollbar.
+::-webkit-scrollbar-track-piece the track (progress bar) NOT covered by the handle.
+::-webkit-scrollbar-corner the bottom corner of the scrollbar, where both horizontal and vertical scrollbars meet.
+::-webkit-resizer the draggable resizing handle that appears at the bottom corner of some elements. */
+
+
+
+
+
+/*CemBaba Bundle Selection*/
+
+.cembababundlTitle{
+    background-color: white;
+}
+
+.stickytitle{
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+.PlanContainer{
+    padding:0px 140px 0px 120px; /*top right bottom left*/
+    background-color: white;
+}
+
+.cembababundlTitle .titleh3{
+    font-weight: bold;
+    display: inline-block;
+}
+.nohiddenfees{
+    font-family: 'Shadows Into Light', cursive;
+}
+.switchplans{
+    font-family: 'Abril Fatface', cursive;
+    font-weight: bold;
+}
+
+.MPop{
+    font-family: 'Kaisei Decol', serif;
+    color:white;
+    position:absolute;
+    margin-left:27px;
+    font-weight: bold;
+}
+.MpopDıs{
+    margin-left:255px;
+    margin-bottom: -15px;
+    width: 150px;
+    height: 25px;
+    border-radius:50px;
+    background-color:lightslategray;
+    Color:White;
+    display:inline-block;
+}
+
+.divtitleandMpop{
+    background-color: white;
+}
+
+.yancembaba{
+    font-size:35px;
+    margin-left:170px;
+    display:inline-block;
+}
+
+
+.yancembaba2{
+    font-size:35px;
+    margin-left:190px;
+    display:inline-block;
+    position: absolute;
+}
+
+.yancembaba3{
+    font-size:35px;
+    margin-left:550px;
+    display:inline-block;
+    position: absolute;
+}
+
+
+.Day30Trail1{
+    display: inline-block;
+    margin-left:400px;
+}
+
+.Day30Trail2{
+    display: inline-block;
+    margin-left:270px;
+    position: absolute;
+}
+
+.Day30Trail3{
+    display: inline-block;
+    margin-left:620px;
+    position: absolute;
+}
+
+
+
+.tryfor0{
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    border:none;
+    cursor: pointer;
+    padding: 10px 65px;
+    margin-left:610px;
+    display: inline-block;
+}
+.tryfor0yazı{
+    font-size:23px;
+    align-items: center;
+}
+
+.tryfor0:hover{
+    opacity: 0.7;
+}
+
+.tryfor02{
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    border:none;
+    cursor: pointer;
+    padding: 10px 65px;
+    margin-left:170px;
+    display: inline-block;
+    position: absolute;
+}
+.tryfor0yazı2{
+    font-size:23px;
+    align-items: center;
+}
+
+.tryfor02:hover{
+    opacity: 0.7;
+}
+
+.tryfor03{
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    border:none;
+    cursor: pointer;
+    padding: 10px 65px;
+    margin-left:515px;
+    display: inline-block;
+    position: absolute;
+}
+.tryfor0yazı3{
+    font-size:23px;
+    align-items: center;
+}
+
+.tryfor03:hover{
+    opacity: 0.7;
+}
+
+
+
+
+/*pricedivder*/
+.bundledivider{
+    width: 100%;
+    height: 3px;
+    border-top: 1px grey solid;
+    margin:30px 0; 
+}
+
+
+
+/*price*/
+  
+.priceplace{
+    background-color: white;
+    color:black;
+    
+}
+
+.price1{
+    display:inline-block;
+    margin-left:540px;
+    font-weight: bold;
+}
+
+.price2{
+    display:inline-block;
+    margin-left:340px;
+    font-weight: bold;
+}
+
+.price3{
+    display:inline-block;
+    margin-left:280px;
+    font-weight: bold;
+}
+
+
+
+.planyazı2place{
+    background-color: white;
+    color:black;
+}
+
+.planyazı2{
+    display:inline-block;
+}
+
+.tick1{
+    width: 30px;
+    display:inline-block;
+    margin-left: 270px;
+}
+ .tick2{
+    width: 30px;
+    display:inline-block;
+    margin-left: 385px;
+}
+ .tick3{
+    width: 30px;
+    display:inline-block;
+    margin-left: 330px;
+    
+}  
+
+.tick4{
+    width: 30px;
+    display:inline-block;
+    margin-left: 420px;
+}
+
+.tick5{
+    width: 30px;
+    display:inline-block;
+    margin-left: 390px;
+}
+
+.tick6{
+    width: 30px;
+    display:inline-block;
+    margin-left: 330px;
+}
+
+.tick7{
+    width: 30px;
+    display:inline-block;
+    margin-left: 410px;
+}
+
+.tick8{
+    width: 30px;
+    display:inline-block;
+    margin-left: 390px;
+}
+
+.tick9{
+    width: 30px;
+    display:inline-block;
+    margin-left: 330px;
+}
+
+.tick10{
+    width: 30px;
+    display:inline-block;
+    margin-left: 380px;
+}
+
+.tick11{
+    width: 30px;
+    display:inline-block;
+    margin-left: 390px;
+}
+
+.tick12{
+    width: 30px;
+    display:inline-block;
+    margin-left: 330px;
+}
+
+.tick13{
+    width: 30px;
+    display:inline-block;
+    margin-left: 517px;
+}
+
+.tick14{
+    width: 30px;
+    display:inline-block;
+    margin-left: 390px;
+}
+
+.tick15{
+    width: 30px;
+    display:inline-block;
+    margin-left: 330px;
+}
+
+.tick16{
+    width: 30px;
+    display:inline-block;
+    margin-left: 560px;
+}
+
+.tick17{
+    width: 30px;
+    display:inline-block;
+    margin-left: 390px;
+}
+
+.tick18{
+    width: 30px;
+    display:inline-block;
+    margin-left: 330px;
+}
+
+.tick19{
+    width: 30px;
+    display:inline-block;
+    margin-left: 350px;
+}
+
+.tick20{
+    width: 30px;
+    display:inline-block;
+    margin-left: 390px;
+}
+
+.tick21{
+    width: 30px;
+    display:inline-block;
+    margin-left: 330px;
+}
+
+
+.boşplan{
+    background-color: white;
+    color:white;
+}
+
+
+
+
+
+/*Copy pasted the dark mode button that i did in fucking sike.html cuz i am lazy*/
+
+.cembababundledarkmode{
+    background-color: white;
+    color: Black;
+}
+
+
+.cembababundledarkmode .darkMode{
+    background-color: black;
+    color: white;
+}
+
+.checkbox{
+    top:10px;
+    right:840px;
+    display:inline-block; /*dışdan basılıyordu inline yaptım*/
+    width: 100px;
+    height: 40px;
+    background-color:rgb(11, 12, 12);
+    color:white;
+    border-radius: 40px;
+    position: relative;
+    cursor:pointer;
+    transition: 1000ms background-color;
+}
+
+.checkbox .spann{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:rgb(229, 233, 236);
+    position:absolute;
+    top:5px;
+    left:5px;
+    transition: 500ms left, 1000ms background-color;
+}
+
+.checkbox .spann .textspann{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:transparent;
+    color:black;
+    position:absolute;
+    top:4px;
+    left:2px;
+    transition: 500ms left, 1000ms background-color;
+}
+
+.darklabel input:checked +.checkbox{
+     background-color:rgb(248, 244, 244);
+}
+
+.darklabel input:checked + .checkbox .spann{
+    left:65px;
+    background-color:rgb(7, 7, 7);
+}
+
+.darklabel input:checked + .checkbox .spann .textspann{
+    background-color:transparent;
+    color:white;
+}
+
+label input{
+    display:none;
+}
+
+
+
+
+/* ctrl+ö başka bir comment atma şekli*/
